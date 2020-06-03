@@ -1,42 +1,34 @@
 import React from "react";
 import "./widget-style.css";
+import Container from "../Container"
+// import thing from "../../../public/media/logo.png"
 
-import { Button, Form, FormGroup, Label, Input, FormText, Container } from 'reactstrap';
+// import { Card, Row, Col } from 'react-bootstrap';
 
 const Widget = (props) => {
     return (
-        <div class="container">
-            <form id="suggestion_box" action="" method="post">
-                <h3>Suggestion box</h3>
-                <h5>Or general improvement ideas</h5>
-                <fieldset>
-                    <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-        // <Container>
-        //     <Form>
-        //         <FormGroup>
-        //             <Label for="exampleEmail">Email</Label>
-        //             <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
-        //         </FormGroup>
-        //         <FormGroup>
-        //             <Label for="examplePassword">Password</Label>
-        //             <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-        //         </FormGroup>
 
+        <Container>
+            <div className="row justify-content-center">
+                <div className="card">
+                    <div className="logo-container">
+                        <img src="../../../media/logo.png" className="card-img-top main-logo" alt="..." />
+                    </div>
+                    <div className="card-body">
+                        <p className="card-text">Hey there! During this uncertain time we would love to hear about what is working and what doesnt really work well.</p>
+                        <div>Thanks,</div>
+                        <div>Seven Oaks</div>
 
-        //         <FormGroup>
-        //             <Label for="exampleText">Text Area</Label>
-        //             <Input type="textarea" name="text" id="exampleText" />
-        //         </FormGroup>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Please enter your comments and suggestions below and click submit.</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
 
-        //         <Button>Submit</Button>
-        //     </Form>
-        // </Container>
+                        <button type="button" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </Container>
     )
 }
 
