@@ -18,14 +18,28 @@ body {
 	font-size: 12px;
 	line-height:30px;
 	color:#777;
-	background:#0CF;
+	background:#457296;
 }
 
-.main-logo {
-	height: 100px;
-	width: 200px;
+.widget__text {
+	font-family: 'Federo', sans-serif;
+	font-size: 16px;
+	color: black;
+	border: 5px solid #279933;
+	border-radius: 10px;
 }
 
-.logo-container {
+.widget__image-box--logo {
+	height: 150px;
+	width: 275px;
+}
+
+.widget__image-box {
 	text-align: center;
+	margin-top: 20px;
+}
+
+.widget {
+	margin-top: 15vh;
+	
 }
