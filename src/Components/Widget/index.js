@@ -19,14 +19,14 @@ const Widget = (props) => {
                         <div>Thanks,</div>
                         <div>Seven Oaks</div>
 
-                        <div class="form-group">
+                        <div className="form-group">
                         <hr></hr>
-                            <label for="exampleFormControlTextarea1">Please enter your comments and suggestions below and click submit.</label>
+                            <label htmlFor="exampleFormControlTextarea1">Please enter your comments and suggestions below and click submit.</label>
                             
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea className="form-control" rows="3" value={props.value} onChange={props.handleChange}></textarea>
                         </div>
 
-                        <button type="button" class="btn btn-success">Submit</button>
+                        <button onClick={() => props.handleSubmit()} type="button" className="btn btn-success">Submit</button>
                     </div>
                 </div>
             </div>
